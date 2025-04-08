@@ -1,0 +1,56 @@
+let products = [
+    {
+        "img": "images/1.webp",
+        "title": "Dermal Therapy Lotion",
+        "des": "$39.99",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/2.jpg",
+        "title": "Classic Plus Pain Relief",
+        "des": "$40.99",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/3.jpg",
+        "title": "Lavender Essential Oil",
+        "des": "$15.99",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/4.jpg",
+        "title": "Cliell Face Mask",
+        "des": "$5.00",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/5.jpg",
+        "title": "Cliell Virus Guard",
+        "des": "$15.99",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/6.jpg",
+        "title": "Painkiller Tablets",
+        "des": "$50.00",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/7.jpg",
+        "title": "Grapeseed Massage Oil",
+        "des": "$42.00",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/8.jpg",
+        "title": "Mediceuticals Healing Cream",
+        "des": "$7.00",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    },
+    {
+        "img": "images/9.jpg",
+        "title": "Seirin Pain Relief Tablets",
+        "des": "$35.99",
+        "btn": "<a href='product1.html'  class='btn btn-outline-primary' type='button''>Purchase</a>"
+    }
+];

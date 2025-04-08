@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="ap.css">
+    <style>
+        /* Add some padding to the top of the body to prevent content from being hidden behind the fixed navbar */
+        body {
+            padding-top: 70px; /* Adjust the value if the navbar height is different */
+        }
+
+        /* Optional: You can add some styles to make the navbar stand out more */
+        .navbar {
+            background-color: #f8f9fa; /* Light background for the navbar */
+        }
+    </style>
+</head>
+<body>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Navbar with fixed-top class -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <!-- Center the brand logo using flex utilities -->
+          <a class="navbar-brand mx-auto" href="#">
+            <img src="logo.png" alt="Zara Therapy Logo" style="width: 50px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="contect us.html">Contact</a>
+              <a class="nav-link" href="gallere.html">Gallery</a>
+              <a class="nav-link" href="apointmit.html">Appointment</a>
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container mt-5">
+        <header>
+            <h1>Book Your Doctor's Appointment</h1>
+        </header>
+
+        <section class="appointment-form">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Appointment Date</label>
+                    <input type="date" id="appointment-date" name="appointment-date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-time">Appointment Time</label>
+                    <input type="time" id="appointment-time" name="appointment-time" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Doctor</label>
+                    <select id="doctor" name="doctor" class="form-control" required>
+                        <option value="">Select a Doctor</option>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Johnson">Dr. Johnson</option>
+                        <option value="Dr. Lee">Dr. Lee</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Book Appointment</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+
