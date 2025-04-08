@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Zara Therapy Clinic</title>
+    <link rel="shortcut icon" href="images/12__1___1_-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/contactUs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" type="image/x-icon">
+    <style>
+</head>
+<style> 
+  body {
+    background-color: #f0fff0; /* Light green background */
+    color: #2d572c; /* Dark green text */
+}
+
+.bg-light {
+    background-color: #e6ffe6 !important; /* Light greenish background */
+}
+
+.text-primary {
+    color: #2d572c !important; /* Dark green for primary text */
+}
+
+.btn-outline-primary {
+    border-color: #2d572c;
+    color: #2d572c;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2d572c;
+    color: white;
+}
+
+footer {
+    background-color: #2d572c; /* Dark green footer */
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #a8e6a3; /* Light green hover */
+}
+
+.side-menu {
+    background-color: #e6ffe6; /* Light green for side menu */
+}
+
+.navbar, .breadcrumb {
+    background-color: #e6ffe6; /* Navbar background */
+}
+
+h1, h2, h3 {
+    color: #2d572c; /* Headings in dark green */
+}
+
+.border-dark {
+    border-color: #2d572c !important;
+}
+
+</style>
+
+<body class="bg-light">
+    
+<!-- Navbar -->
+ <!-- Top Navbar -->
+ <nav class="navbar navbar-expand-lg" style="background-color: #A8D5BA;">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" alt="Zara Clinic Logo" height="40px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="aboutus.html">About</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="team.html">Team</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="service.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="appointment.html">Appointment</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="contactus.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="clintfeedback.html">client</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<!-- contact us start -->
+
+<div class="container my-5">
+  <!-- Header Section -->
+  <div class="row justify-content-center mb-4">
+    <h1 class="text-primary display-3 fw-bolder text-center">Contact Us</h1>
+  </div>
+
+  <!-- Form Section -->
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-10 m-1 p-4 border border-dark rounded">
+      <h2 class="text-center mb-4 text-primary display-5 fw-bolder text-center">Fill out the form</h2>
+      <form class="row g-3">
+        <div class="col-12">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control " id="fullName" placeholder="Enter Your Full Name " pattern="[A-Za-z]{3,12}" title="At least 3 letters required" required>
+        </div>
+        <div class="col-12">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Your Number" pattern="[0-9]{10}" title="10 digits required" required>
+        </div>
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="col-12">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter Your Password" pattern=".{8,}" title="At least 8 characters" required>
+        </div>
+        <div class="col-12">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" required>
+        </div>
+        <div class="col-md-4">
+          <label for="state" class="form-label">State</label>
+          <select id="state" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="zip " class="form-label ">Zip</label>
+          <input type="text" class="form-control text-primary" id="zip" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              I agree to the terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+<br><br>
+  <!-- Map Section -->
+  
+  <!-- Contact Section (Icons) -->
+  <div class="row m-4 text-center">
+    <div class="col-12 col-md-4">
+      <a href="https://www.google.com/maps?q=Zara+Therapy+Clinic" target="_blank">
+        <i class="fa-solid fa-location-dot" style="font-size: 80px;"></i>
+      </a>
+      <h3>Location</h3>
+    </div>
+    <div class="col-12 col-md-4">
+      <a href="tel:+1234567890">
+        <i class="fa-solid fa-phone-volume" style="font-size: 80px;"></i>
+      </a>
+      <h3>Call Us</h3>
+    </div>
+    <div class="col-12 col-md-4">
+      <form action="mailto:miniproject@gmail.com">
+        <button class="fa-solid fa-square-envelope" style="font-size: 80px; border: none;"></button>
+      </form>
+      <h3>Email Us</h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- contact us end -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+        <p class="mb-4 text-muted">Embrace the serenity of nature. Let the breeze refresh your soul and the beauty of the earth inspire your journey. Nature’s peace is the ultimate healer.</p>
+        <div class="social-links mb-4">
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-section mb-4">
+            <ul class="list-unstyled">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 Zara Therapy Clinic</p>
+    </div>
+  </footer>
+  <p id="location"></p>
+
+  <script>
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        document.getElementById("location").textContent = `Latitude: ${lat}, Longitude: ${lon}`;
+      });
+    } else {
+      document.getElementById("location").textContent = "Geolocation is not supported by this browser.";
+    }
+  </script>
+
+  
+  <script src="bootstrap js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  <a href="doctor pages/Dr. John Smith.html"></a>

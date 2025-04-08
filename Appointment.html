@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment - Zara Therapy Clinic</title>
+    <link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" type="image/x-icon">
+    <style>
+    <style>
+        body {
+            background-color: #F8FFF4; /* Light greenish-white */
+            color: #2C5E3E;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #A8D5BA !important;
+        }
+
+        .navbar .nav-link {
+            color: #2C5E3E !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #1B3D2F !important;
+        }
+
+        .appointment-container {
+            max-width: 500px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .form-control, .form-select {
+            border: 1px solid #A8D5BA;
+            height: 50px;
+        }
+
+        .btn-primary {
+            background-color: #A8D5BA;
+            border: none;
+            color: #2C5E3E;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #8CC5A2;
+        }
+
+        footer {
+            background-color: #A8D5BA;
+            padding: 15px;
+            text-align: center;
+            color: #2C5E3E;
+        }
+
+        footer a {
+            color: #1B3D2F;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" alt="Zara Clinic" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                <li class="nav-item"><a class="nav-link" href="conatctus.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="clintfeedback.html">client</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Appointment Form -->
+<div class="appointment-container">
+    <h2 class="text-success mb-4">Make an Appointment</h2>
+    <form id="appointmentForm">
+        <select class="form-select mb-3" required>
+            <option value="" disabled selected>Select Therapy</option>
+            <option value="cbt">Cognitive Behavioral Therapy</option>
+            <option value="mindfulness">Mindfulness Therapy</option>
+            <option value="art">Art Therapy</option>
+        </select>
+
+        <select class="form-select mb-3" required>
+            <option value="" disabled selected>Select Doctor</option>
+            <option value="dr-smith">Dr. John Smith</option>
+            <option value="dr-johnson">Dr. Emily Johnson</option>
+            <option value="dr-brown">Dr. Michael Brown</option>
+        </select>
+
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+        <input type="date" class="form-control mb-3" required>
+        <input type="time" class="form-control mb-3" required>
+
+        <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+    </form>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+        <p class="mb-4 text-muted">Embrace the serenity of nature. Let the breeze refresh your soul and the beauty of the earth inspire your journey. Nature’s peace is the ultimate healer.</p>
+        <div class="social-links mb-4">
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-section mb-4">
+            <ul class="list-unstyled">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 Zara Therapy Clinic</p>
+    </div>
+  </footer>
+<script>
+    document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Appointment successfully made!");
+    });
+</script>
+
+<script src="bootstrap js/bootstrap.min.js"></script>
+</body>
+</html>

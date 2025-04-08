@@ -1,0 +1,57 @@
+let Machines = [
+    {
+        "img": "machine images/1.webp",
+        "title": "TENS Unit (Transcutaneous Electrical Nerve Stimulation)",
+        "price": "$150",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/2.jpg",
+        "title": "Ultrasound Therapy Machine",
+        "price": "$500",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/3.jpg",
+        "title": "Traction Therapy Unit",
+        "price": "$700",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/36.avif",
+        "title": "Interferential Current Therapy (IFC) Machine",
+        "price": "$450",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/4.jpg",
+        "title": "Cryotherapy Machine (Cold Therapy)",
+        "price": "$350",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/5.jpg",
+        "title": "Hot Packs and Heating Pads",
+        "price": "$25",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/6.jpg",
+        "title": "Continuous Passive Motion (CPM) Machine",
+        "price": "$1000",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/7.jpg",
+        "title": "Electrical Stimulation Therapy (NMES) Machine",
+        "price": "$350",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    {
+        "img": "machine images/8.png",
+        "title": "Cryo-Cuff",
+        "price": "$150",
+        "btn": "<a href='machine purchase.html'  class='btn btn-outline-primary' type='button'>Purchase</a>"
+    },
+    
+];

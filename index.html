@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Zara Therapy Clinic</title>
+    <link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #A8D5BA;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/Green_and_White_Modern_Medical_Logo-removebg-preview.png" alt="Zara Clinic Logo" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="appointment.html">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="clintfeedback.html">client</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/za (1).png" class="d-block w-100" alt="...">
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span ></span>
+        </button>
+    </div>
+
+    <!-- Machine Information Section -->
+    <div class="container my-5">
+        <h1 class="text-center text-primary text-success">Machine Information</h1>
+        <div class="row" id="dataa"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #A8D5BA; padding: 40px 0;">
+        <p class="text-muted">Embrace the serenity of nature. Let the breeze refresh your soul.</p>
+        <div class="mb-3">
+            <a href="https://www.facebook.com/" class="btn btn-outline-light me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" class="btn btn-outline-light me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="btn btn-outline-light"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="aboutus.html" class="text-white">About Us</a></li>
+            <li><a href="contactus.html" class="text-white">Contact Us</a></li>
+            <li><a href="privacy.html" class="text-white">Privacy Policy</a></li>
+        </ul>
+        <p>&copy; 2025 Zara Therapy Clinic</p>
+    </footer>
+
+    <script src="json/machine.json"></script>
+    <script>
+        let dataa = document.getElementById("dataa");
+        let htmlContent = '';
+
+        for (let a = 0; a < Machines.length; a++) {
+            htmlContent += `
+            <div class="col-12 col-md-4 mb-4" data-aos="zoom-in-up">
+                <div class="card border-success shadow">
+                    <img src="${Machines[a].img}" class="card-img-top" alt="Machine Image" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-bold">${Machines[a].title}</h5>
+                        <p class="text-danger fw-bold">Price: ${Machines[a].price}</p>
+                        ${Machines[a].btn}
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+        dataa.innerHTML = htmlContent;
+    </script>
+
+    <script src="bootstrap js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>
+
